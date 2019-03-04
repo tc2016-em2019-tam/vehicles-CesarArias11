@@ -47,8 +47,8 @@ public class Main {
             }
 
             if (myVehicles.get(i) instanceof Emergency) {
-                Emergency ie = (Emergency) myVehicles.get(i);
-                ie.soundSiren();
+                Emergency sv = (Emergency) myVehicles.get(i);
+                sv.soundSiren();
             }
         }
     }
