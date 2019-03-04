@@ -36,5 +36,20 @@ public class Main {
                 sv.soundSiren();
             }
         }
+	    
+	    for (int i = 0; i < myVehicles.size(); i++) {
+
+            out.println(myVehicles.get(i).getName());
+
+            if (myVehicles.get(i) instanceof LandVehicle) {
+                LandVehicle lv = (LandVehicle) myVehicles.get(i);
+                lv.drive();
+            }
+
+            if (myVehicles.get(i) instanceof Emergency) {
+                Emergency ie = (Emergency) myVehicles.get(i);
+                ie.soundSiren();
+            }
+        }
     }
 }
